@@ -6,6 +6,7 @@
     ./connectivity.nix
     ./hardware-configuration.nix
     ./localisation.nix
+    ./drivers.nix
   ];
 
   ### Base NixOS Version

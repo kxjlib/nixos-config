@@ -30,6 +30,8 @@ in {
     polkit_gnome
     dbus
     dbus-sway-environment
+    gsettings-desktop-schemas
+    gnome.dconf-editor
     configure-gtk
     wayland
     xdg-utils
@@ -41,6 +43,7 @@ in {
     dunst
     wdisplays
     waybar
+    wlsunset
     rofi-wayland
     xwayland
     xwaylandvideobridge

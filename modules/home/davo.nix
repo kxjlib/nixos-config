@@ -12,6 +12,7 @@
     alacritty
     google-chrome
     fira-code-nerdfont
+    protonup-qt
   ];
 
   programs.git = {
@@ -52,7 +53,6 @@
       ms-vscode.cmake-tools
     ];
   };
-
 
   home.stateVersion = "23.11";
   programs.home-manager.enable = true;
