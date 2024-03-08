@@ -3,8 +3,7 @@
 {
   imports =
     [
-      ./modules/system/core/mod.nix
-      ./modules/system/users/davo.nix
+      ./modules/system/config.nix
     ];
 
   services.xserver.enable = true;
