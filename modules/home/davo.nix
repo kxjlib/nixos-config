@@ -4,13 +4,14 @@
   home.username = "davo";
   home.homeDirectory = "/home/davo";
   home.packages = with pkgs; [
-    vscode
-    firefox
     lsd
     neovim
     pfetch-rs
     bluetuith
     direnv
+    alacritty
+    google-chrome
+    fira-code-nerdfont
   ];
 
   programs.git = {
@@ -28,6 +29,7 @@
     shellAliases = {
       rebuild = "sudo nixos-rebuild switch --flake /home/davo/.config/nixos/";
       ls = "lsd";
+      vim = "nvim";
     };
 
     oh-my-zsh = {
@@ -35,6 +37,20 @@
       plugins = [ "git" ];
       theme = "robbyrussell";
     };
+  };
+
+  programs.vscode = {
+    enable = true;
+    extensions = with pkgs.vscode-extensions; [
+      jdinhlife.gruvbox
+      jnoortheen.nix-ide
+      arrterian.nix-env-selector
+      mkhl.direnv
+      rust-lang.rust-analyzer
+      serayuzgur.crates
+      ms-vscode.cpptools
+      ms-vscode.cmake-tools
+    ];
   };
 
 
